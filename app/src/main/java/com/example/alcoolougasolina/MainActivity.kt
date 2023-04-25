@@ -17,27 +17,7 @@ class MainActivity : AppCompatActivity() {
 
         val btCalc: Button = findViewById(R.id.btCalcular)
         btCalc.setOnClickListener(View.OnClickListener {
-            val precoAlcool = findViewById<EditText>(R.id.precoAlcool)
-            val valorAlcool = precoAlcool.text.toString().toDouble()
-
-            val precoGasolina = findViewById<EditText>(R.id.precoGasolina)
-            val valorGasolina = precoGasolina.text.toString().toDouble()
-
-            val result = valorGasolina * percentual
-
-            val resultado = findViewById<EditText>(R.id.resultado)
-
-            if (valorAlcool<=result) {
-                resultado.setText("Álcool é mais vantajoso")
-                resultado.visibility = View.VISIBLE
-                resultado.keyListener = null
-            }
-            else {
-                resultado.visibility = View.VISIBLE
-                resultado.keyListener = null
-                resultado.setText("Gasolina é mais vantajoso")
-            }
-            Log.d("PDM23","No btCalcular, $percentual, $valorGasolina, $valorAlcool")
+            calculo()
         })
     }
 override fun onResume(){
@@ -60,4 +40,29 @@ override fun onDestroy(){
     super.onDestroy()
     Log.d("PDM23","No onResume")
 }
+
+    fun calculo(){
+        val precoAlcool = findViewById<EditText>(R.id.precoAlcool)
+        val valorAlcool = precoAlcool.text.toString().toDouble()
+
+        val precoGasolina = findViewById<EditText>(R.id.precoGasolina)
+        val valorGasolina = precoGasolina.text.toString().toDouble()
+
+        val result = valorGasolina * percentual
+
+        val resultado = findViewById<EditText>(R.id.resultado)
+
+        if (valorAlcool<=result) {
+            resultado.setText("Álcool é mais vantajoso")
+            resultado.visibility = View.VISIBLE
+            resultado.keyListener = null
+        }
+        else {
+            resultado.visibility = View.VISIBLE
+            resultado.keyListener = null
+            resultado.setText("Gasolina é mais vantajoso")
+        }
+    }
+
 }
+
