@@ -17,19 +17,25 @@ class MainActivity : AppCompatActivity() {
 
         val btCalc: Button = findViewById(R.id.btCalcular)
         btCalc.setOnClickListener(View.OnClickListener {
-            var precoAlDigitado = findViewById<EditText>(R.id.precoAlcool)
-            var valorAl: String = precoAlDigitado.getText().toString()
-            var valorAlcool: Double = valorAl.toDouble()
+            val precoAlcool = findViewById<EditText>(R.id.precoAlcool)
+            val valorAlcool = precoAlcool.text.toString().toDouble()
 
-            var precoGaDigitado = findViewById<EditText>(R.id.precoGasolina)
-            var valorGa: String = precoGaDigitado.getText().toString()
-            var valorGasolina: Double = valorGa.toDouble()
+            val precoGasolina = findViewById<EditText>(R.id.precoGasolina)
+            val valorGasolina = precoGasolina.text.toString().toDouble()
 
-            var resultado = valorGasolina * percentual
+            val result = valorGasolina * percentual
 
+            val resultado = findViewById<EditText>(R.id.resultado)
 
-            if(valorAlcool<=resultado){
-                Log.d("PDM23", "TESTE")
+            if (valorAlcool<=result) {
+                resultado.setText("Álcool é mais vantajoso")
+                resultado.visibility = View.VISIBLE
+                resultado.keyListener = null
+            }
+            else {
+                resultado.visibility = View.VISIBLE
+                resultado.keyListener = null
+                resultado.setText("Gasolina é mais vantajoso")
             }
             Log.d("PDM23","No btCalcular, $percentual, $valorGasolina, $valorAlcool")
         })
