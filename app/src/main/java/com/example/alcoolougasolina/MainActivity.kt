@@ -19,7 +19,17 @@ class MainActivity : AppCompatActivity() {
         val switchPercentual = findViewById<Switch>(R.id.swPercentual)
 
         switchPercentual.setOnCheckedChangeListener { _, isChecked ->
-            percentual = if (isChecked) 0.75 else 0.7
+
+            if (isChecked) {
+                switchPercentual.setText("75%")
+                percentual = 0.75
+            }
+            else {
+                switchPercentual.setText("70%")
+                percentual = 0.70
+            }
+
+
         }
 
         val btCalc: Button = findViewById(R.id.btCalcular)
