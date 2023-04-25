@@ -5,6 +5,7 @@ import android.util.Log
 import android.view.View
 import android.widget.Button
 import android.widget.EditText
+import android.widget.Switch
 import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
@@ -15,9 +16,15 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         Log.d("PDM23","No onCreate, $percentual")
 
+        val switchPercentual = findViewById<Switch>(R.id.swPercentual)
+
+        switchPercentual.setOnCheckedChangeListener { _, isChecked ->
+            percentual = if (isChecked) 0.75 else 0.7
+        }
+
         val btCalc: Button = findViewById(R.id.btCalcular)
         btCalc.setOnClickListener(View.OnClickListener {
-            calculo()
+            calculo(percentual)
         })
     }
 override fun onResume(){
@@ -41,7 +48,7 @@ override fun onDestroy(){
     Log.d("PDM23","No onResume")
 }
 
-    fun calculo(){
+    fun calculo(percentual: Double){
         val precoAlcool = findViewById<EditText>(R.id.precoAlcool)
         val valorAlcool = precoAlcool.text.toString().toDouble()
 
