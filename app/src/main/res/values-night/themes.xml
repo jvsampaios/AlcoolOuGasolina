@@ -8,15 +8,16 @@
         <item name="colorPrimaryDark">#41436a</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">#984063</item>
-        <item name="colorSecondaryVariant">#f64668</item>
+        <item name="colorSecondaryVariant">#41436a</item>
         <item name="colorOnSecondary">#984063</item>
         <!-- Status bar color. -->
-        <item name="android:statusBarColor">#984063</item>
+        <item name="android:statusBarColor">#752092</item>
 
         <!-- Customize your theme here. -->
         <item name="android:textColorPrimary">#D1D1D1</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textColorHint">#D1D1D1</item>
         <item name="android:backgroundTint">#984063</item>
+
     </style>
 </resources>

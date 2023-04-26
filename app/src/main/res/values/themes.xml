@@ -4,11 +4,11 @@
         <!-- Primary brand color. -->
         <item name="colorPrimary">#ffc872</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
-        <item name="colorOnPrimary">#ffc872</item>
+        <item name="colorOnPrimary">#41436a</item>
         <item name="colorPrimaryDark">#c957bc</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">#c957bc</item>
-        <item name="colorSecondaryVariant">#ffc872</item>
+        <item name="colorSecondaryVariant">#ffe3b3</item>
         <item name="colorOnSecondary">#000000</item>
 
         <!-- Customize your theme here. -->
