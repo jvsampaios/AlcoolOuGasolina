@@ -9,9 +9,12 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.Switch
 import androidx.appcompat.app.AppCompatActivity
+import java.math.BigDecimal
+import java.math.RoundingMode
 
 class MainActivity : AppCompatActivity() {
-    var percentual:Double = 0.7
+    var percentual: Double = 0.7
+    val f = 0.7f
     private lateinit var sharedPref: SharedPreferences
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -23,8 +26,8 @@ class MainActivity : AppCompatActivity() {
         sharedPref = getPreferences(Context.MODE_PRIVATE)
 
         // Recupera o valor da variável percentual salvo, ou usa o valor padrão 0.7
-        percentual = sharedPref.getFloat("percentual", 0.7F).toDouble()
-
+        percentual = sharedPref.getFloat("percentual", f).toDouble()
+        percentual = BigDecimal(percentual).setScale(2, RoundingMode.HALF_UP).toDouble()
         val btCalc: Button = findViewById(R.id.btCalcular)
         btCalc.setOnClickListener(View.OnClickListener {
             calculo(percentual)
