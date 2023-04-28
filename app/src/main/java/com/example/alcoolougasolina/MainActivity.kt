@@ -22,12 +22,15 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         Log.d("PDM23", "No onCreate, $percentual")
 
-        // Recupera o SharedPreferences
+
         sharedPref = getPreferences(Context.MODE_PRIVATE)
 
-        // Recupera o valor da variável percentual salvo, ou usa o valor padrão 0.7
+
         percentual = sharedPref.getFloat("percentual", f).toDouble()
+
+        //arredondando o número float
         percentual = BigDecimal(percentual).setScale(2, RoundingMode.HALF_UP).toDouble()
+
         val btCalc: Button = findViewById(R.id.btCalcular)
         btCalc.setOnClickListener(View.OnClickListener {
             calculo(percentual)
