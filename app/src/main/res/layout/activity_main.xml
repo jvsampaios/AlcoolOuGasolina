@@ -86,8 +86,8 @@
                 android:paddingHorizontal="10dp"
                 android:text="O álcool para ser rentável deve ter 70% ou 75% do valor da gasolina?"
                 android:textAlignment="textStart"
-                android:textColor="#FFFFFF"
-                android:textColorHint="#FFFFFF"
+                android:textColor="?colorContainer"
+                android:textColorHint="?colorContainer"
                 android:textSize="14sp" />
 
             <Switch
