@@ -16,6 +16,6 @@
         <!-- Customize your theme here. -->
         <item name="android:textColorPrimary">@color/black</item>
         <item name="android:textColorHint">#41436a</item>
-        <item name="android:backgroundTint">#ffc872</item>
+        <item name="android:backgroundTint">#FFDBA3</item>
     </style>
 </resources>
