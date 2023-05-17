@@ -5,8 +5,6 @@
         <item name="colorPrimary">#ffc872</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
         <item name="colorOnPrimary">#41436a</item>
-        <item name="colorContainer">#000000</item>
-
         <item name="colorPrimaryDark">#c957bc</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">#c957bc</item>
@@ -16,6 +14,6 @@
         <!-- Customize your theme here. -->
         <item name="android:textColorPrimary">@color/black</item>
         <item name="android:textColorHint">#41436a</item>
-        <item name="android:backgroundTint">#FFDBA3</item>
+        <item name="android:backgroundTint">#ffc872</item>
     </style>
 </resources>

@@ -9,8 +9,8 @@
     tools:context=".MainActivity">
 
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:layout_height="550dp"
         android:layout_marginStart="3dp"
         android:layout_marginEnd="3dp"
         android:background="@drawable/rounded_layout"
@@ -18,11 +18,10 @@
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.498">
-
+        app:layout_constraintVertical_bias="0.49">
 
         <ImageView
             android:id="@+id/imageView"
@@ -42,21 +41,20 @@
             android:layout_marginBottom="10dp"
             android:text="Gasolina ou Álcool?"
             android:textAlignment="center"
-            android:textColor="?colorContainer"
+            android:textColor="?android:attr/navigationBarColor"
             android:textSize="25sp"
             android:textStyle="bold" />
 
         <EditText
             android:id="@+id/precoGasolina"
-            android:layout_width="wrap_content"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="30dp"
             android:ems="10"
             android:hint="Preço da gasolina"
             android:inputType="numberDecimal"
-            android:minWidth="48dp"
-            android:minHeight="48dp"
-            android:textAlignment="center" />
+            android:textAlignment="center"
+            android:translationX="-28dp" />
 
         <EditText
             android:id="@+id/precoAlcool"
@@ -65,8 +63,6 @@
             android:ems="10"
             android:hint="Preço do álcool"
             android:inputType="numberDecimal"
-            android:minWidth="48dp"
-            android:minHeight="48dp"
             android:singleLine="false"
             android:textAlignment="center" />
 
@@ -77,27 +73,20 @@
 
             <TextView
                 android:id="@+id/textView"
-                android:layout_width="wrap_content"
+                android:layout_width="186dp"
                 android:layout_height="wrap_content"
-                android:maxWidth="190dp"
-                android:maxHeight="150dp"
-                android:minWidth="48dp"
-                android:minHeight="48dp"
                 android:paddingHorizontal="10dp"
                 android:text="O álcool para ser rentável deve ter 70% ou 75% do valor da gasolina?"
                 android:textAlignment="textStart"
-                android:textColor="?colorContainer"
-                android:textColorHint="?colorContainer"
-                android:textSize="14sp" />
+                android:textSize="12sp" />
 
             <Switch
                 android:id="@+id/swPercentual"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_gravity="right"
-                android:minWidth="48dp"
-                android:minHeight="48dp"
-                android:text="70%" />
+                android:text="70%"
+                android:translationX="30dp" />
         </LinearLayout>
 
         <Button
@@ -117,8 +106,6 @@
             android:ems="10"
             android:hint="O álcool é mais vantajoso."
             android:inputType="text"
-            android:minWidth="48dp"
-            android:minHeight="48dp"
             android:singleLine="true"
             android:textAlignment="center"
             android:textIsSelectable="false"
