@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="app_name">Which fuel?</string>
-    <string name="titleapp">Alcohol or Gas?</string>
-    <string name="gasprice">Gas price</string>
-    <string name="alcprice">Alcohol price</string>
-    <string name="preview">To be cost-effective, alcohol must have 70% or 75% of the value of gasoline?</string>
-    <string name="calc">CALCULATE</string>
-</resources>

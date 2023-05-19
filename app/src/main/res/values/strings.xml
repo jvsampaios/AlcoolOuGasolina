@@ -1,8 +1,3 @@
 <resources>
     <string name="app_name">Com qual combustível?</string>
-    <string name="titleapp">Álcool ou Gasolina?</string>
-    <string name="gasprice">Preço da Gasolina</string>
-    <string name="alcprice">Preço do Álcool</string>
-    <string name="preview">O álcool para ser rentável deve ter 70% ou 75% do valor da gasolina?</string>
-    <string name="calc">CALCULAR</string>
 </resources>
