@@ -2,6 +2,8 @@ package com.example.alcoolougasolina
 
 import android.content.Context
 import android.content.SharedPreferences
+import android.content.res.Configuration
+import android.graphics.Color
 import android.os.Bundle
 import android.util.Log
 import android.view.View
@@ -20,6 +22,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
         Log.d("PDM23", "No onCreate, $percentual")
 
 
