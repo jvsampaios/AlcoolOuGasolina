@@ -9,8 +9,8 @@
     tools:context=".MainActivity">
 
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="521dp"
+        android:layout_height="362dp"
         android:layout_marginStart="3dp"
         android:layout_marginEnd="3dp"
         android:background="@drawable/rounded_layout"
@@ -26,8 +26,8 @@
 
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="190dp"
+            android:layout_height="88dp"
             android:layout_gravity="center_horizontal"
             android:contentDescription="uma bomba de gasolina ilustrando o app"
             android:paddingVertical="10dp"
@@ -43,20 +43,20 @@
             android:text="@string/titleapp"
             android:textAlignment="center"
             android:textColor="?colorContainer"
-            android:textSize="25sp"
+            android:textSize="20sp"
             android:textStyle="bold" />
 
         <EditText
             android:id="@+id/precoGasolina"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="30dp"
             android:ems="10"
             android:hint="@string/gasprice"
             android:inputType="numberDecimal"
             android:minWidth="48dp"
-            android:minHeight="48dp"
-            android:textAlignment="center" />
+            android:minHeight="20dp"
+            android:textAlignment="center"
+            android:textSize="14sp" />
 
         <EditText
             android:id="@+id/precoAlcool"
@@ -66,9 +66,10 @@
             android:hint="@string/alcprice"
             android:inputType="numberDecimal"
             android:minWidth="48dp"
-            android:minHeight="48dp"
+            android:minHeight="20dp"
             android:singleLine="false"
-            android:textAlignment="center" />
+            android:textAlignment="center"
+            android:textSize="14sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -79,10 +80,10 @@
                 android:id="@+id/textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:maxWidth="190dp"
+                android:maxWidth="300dp"
                 android:maxHeight="150dp"
                 android:minWidth="48dp"
-                android:minHeight="48dp"
+                android:minHeight="30dp"
                 android:paddingHorizontal="10dp"
                 android:text="@string/preview"
                 android:textAlignment="textStart"
@@ -93,11 +94,12 @@
             <Switch
                 android:id="@+id/swPercentual"
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_gravity="right"
                 android:minWidth="48dp"
-                android:minHeight="48dp"
-                android:text="70%" />
+                android:minHeight="20dp"
+                android:text="70%"
+                android:translationX="120dp" />
         </LinearLayout>
 
         <Button
@@ -112,16 +114,17 @@
         <EditText
             android:id="@+id/resultado"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:editable="true"
             android:ems="10"
             android:hint="O álcool é mais vantajoso."
             android:inputType="text"
             android:minWidth="48dp"
-            android:minHeight="48dp"
+            android:minHeight="20dp"
             android:singleLine="true"
             android:textAlignment="center"
             android:textIsSelectable="false"
+            android:textSize="16sp"
             android:visibility="invisible" />
 
     </LinearLayout>
