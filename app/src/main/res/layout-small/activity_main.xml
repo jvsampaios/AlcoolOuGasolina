@@ -8,121 +8,133 @@
     android:backgroundTint="?colorSecondaryVariant"
     tools:context=".MainActivity">
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="3dp"
-        android:layout_marginEnd="3dp"
-        android:background="@drawable/rounded_layout"
-        android:backgroundTint="?android:backgroundTint"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.498">
+        tools:layout_editor_absoluteY="0dp">
 
-
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:contentDescription="uma bomba de gasolina ilustrando o app"
-            android:paddingVertical="10dp"
-            android:textAlignment="center"
-            app:srcCompat="@mipmap/ic_launcher_foreground" />
-
-        <TextView
-            android:id="@+id/titulo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="10dp"
-            android:text="@string/titleapp"
-            android:textAlignment="center"
-            android:textColor="?colorContainer"
-            android:textSize="25sp"
-            android:textStyle="bold" />
-
-        <EditText
-            android:id="@+id/precoGasolina"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="30dp"
-            android:ems="10"
-            android:hint="@string/gasprice"
-            android:inputType="numberDecimal"
-            android:minWidth="48dp"
-            android:minHeight="48dp"
-            android:textAlignment="center" />
-
-        <EditText
-            android:id="@+id/precoAlcool"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="@string/alcprice"
-            android:inputType="numberDecimal"
-            android:minWidth="48dp"
-            android:minHeight="48dp"
-            android:singleLine="false"
-            android:textAlignment="center" />
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:layout_width="165dp"
+            android:layout_height="173dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="3dp"
+            android:background="@drawable/rounded_layout"
+            android:backgroundTint="?android:backgroundTint"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.498">
+
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="129dp"
+                android:layout_height="56dp"
+                android:layout_gravity="center_horizontal"
+                android:contentDescription="uma bomba de gasolina ilustrando o app"
+                android:paddingVertical="10dp"
+                android:textAlignment="center"
+                app:srcCompat="@mipmap/ic_launcher_foreground" />
 
             <TextView
-                android:id="@+id/textView"
+                android:id="@+id/titulo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:maxWidth="190dp"
-                android:maxHeight="150dp"
-                android:minWidth="48dp"
-                android:minHeight="48dp"
-                android:paddingHorizontal="10dp"
-                android:text="@string/preview"
-                android:textAlignment="textStart"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:text="@string/titleapp"
+                android:textAlignment="center"
                 android:textColor="?colorContainer"
-                android:textColorHint="?colorContainer"
-                android:textSize="14sp" />
+                android:textSize="10sp"
+                android:textStyle="bold" />
 
-            <Switch
-                android:id="@+id/swPercentual"
+            <EditText
+                android:id="@+id/precoGasolina"
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_gravity="right"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:ems="10"
+                android:hint="@string/gasprice"
+                android:inputType="numberDecimal"
+                android:minWidth="14dp"
+                android:minHeight="14dp"
+                android:textAlignment="center"
+                android:textSize="10sp" />
+
+            <EditText
+                android:id="@+id/precoAlcool"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/alcprice"
+                android:inputType="numberDecimal"
+                android:minWidth="14dp"
+                android:minHeight="14dp"
+                android:singleLine="false"
+                android:textAlignment="center"
+                android:textSize="10sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="96dp"
+                    android:layout_height="wrap_content"
+                    android:maxWidth="190dp"
+                    android:maxHeight="150dp"
+                    android:minWidth="48dp"
+                    android:minHeight="48dp"
+                    android:paddingHorizontal="10dp"
+                    android:text="@string/preview"
+                    android:textAlignment="textStart"
+                    android:textColor="?colorContainer"
+                    android:textColorHint="?colorContainer"
+                    android:textSize="10sp" />
+
+                <Switch
+                    android:id="@+id/swPercentual"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:minWidth="48dp"
+                    android:minHeight="48dp"
+                    android:text="70%"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btCalcular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginVertical="20dp"
+                android:backgroundTint="?colorSecondaryVariant"
+                android:text="@string/calc" />
+
+            <EditText
+                android:id="@+id/resultado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:editable="true"
+                android:ems="10"
+                android:hint="O álcool é mais vantajoso."
+                android:inputType="text"
                 android:minWidth="48dp"
                 android:minHeight="48dp"
-                android:text="70%" />
+                android:singleLine="true"
+                android:textAlignment="center"
+                android:textIsSelectable="false"
+                android:visibility="invisible" />
+
         </LinearLayout>
-
-        <Button
-            android:id="@+id/btCalcular"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginVertical="20dp"
-            android:backgroundTint="?colorSecondaryVariant"
-            android:text="@string/calc" />
-
-        <EditText
-            android:id="@+id/resultado"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:editable="true"
-            android:ems="10"
-            android:hint="O álcool é mais vantajoso."
-            android:inputType="text"
-            android:minWidth="48dp"
-            android:minHeight="48dp"
-            android:singleLine="true"
-            android:textAlignment="center"
-            android:textIsSelectable="false"
-            android:visibility="invisible" />
-
-    </LinearLayout>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
